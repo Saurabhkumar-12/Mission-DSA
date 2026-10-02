@@ -2,20 +2,22 @@ class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
         int n = nums.size();
-        vector<int> a(n, 1);
+        vector<int> a(n);
 
-        // Product of elements before i
-        int prefix = 1;
+        int left = 1;
+
+        // Left product
         for (int i = 0; i < n; i++) {
-            a[i] = prefix;
-            prefix *= nums[i];
+            a[i] = left;
+            left *= nums[i];
         }
 
-        // Product of elements after i
-        int suffix = 1;
+        int right = 1;
+
+        // Right product
         for (int i = n - 1; i >= 0; i--) {
-            a[i] *= suffix;
-            suffix *= nums[i];
+            a[i] *= right;
+            right *= nums[i];
         }
 
         return a;
