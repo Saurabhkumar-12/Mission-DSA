@@ -1,6 +1,6 @@
 # 🚀 Mission DSA
 
-Welcome to **Mission DSA** — my personal journey of mastering **Data Structures and Algorithms** through consistent problem solving.
+Welcome to **Mission DSA**  my personal journey of mastering **Data Structures and Algorithms** through consistent problem solving.
 
 This repository contains my solutions to coding problems from platforms such as **LeetCode** and **HackerRank**, mainly written in **C++**.
 
